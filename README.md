@@ -27,13 +27,12 @@ A collection of open protocols we have developed:
   + You need to open all the channel images!
 3. After you've opened all the channel images,  we want to merge them into composite image (composite just means that it's handled as 1 file, but it has the multiple channels in the 1 file). To do this: 
   1. Select from the menu: 'Images -> Color -> Merge channels':
-
-<img src="http://s25.postimg.org/j5e0rep5b/Merge_Channels.png"/>
   2. Assign the file names to the colors you desire. In this case, I set `C0` to blue, `C1` to green, and `C3` to red.
   3. Ensure the 'Create Composite' is checked
   4. Press 'Ok'
-3. Go to 'Images -> Color' and open: Color Channels
-4. Go to 'Images -> Adjust' and open: Brightness & Contrast
-5. In the 'Channels' dialog box, select 'Color' from the pull down menu
-6. Select 'Channel 1', press 'Set', and enter the 'Minimum' and 'Maximum' displayed values as indicated above. Don't check anything else in that dialog. Do the same for the other channels.
-7. Now we want to save each channel as it's own pseudocolored image. Select from the menu 'Image -> Type -> 
+  5. <img src="http://s25.postimg.org/j5e0rep5b/Merge_Channels.png"/>
+4. Go to 'Images -> Color' and open: Color Channels
+5. Go to 'Images -> Adjust' and open: Brightness & Contrast
+6. In the 'Channels' dialog box, select 'Color' from the pull down menu
+7. Select 'Channel 1', press 'Set', and enter the 'Minimum' and 'Maximum' displayed values as indicated above. Don't check anything else in that dialog. Do the same for the other channels.
+8. Now we want to save each channel as it's own pseudocolored image. Select from the menu 'Image -> Type -> 
