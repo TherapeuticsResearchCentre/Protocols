@@ -20,10 +20,20 @@ A collection of open protocols we have developed:
 
 ### Protocol
 
-1. Open each channel image and color merge as above (Images -> Color -> Merge channels)
-  + Ensure the 'Create Composite' is checked
-2. Go to 'Images -> Color' and open: Color Channels
-3. Go to 'Images -> Adjust' and open: Brightness & Contrast
-4. In the 'Channels' dialog box, select 'Color' from the pull down menu
-5. Select 'Channel 1', press 'Set', and enter the 'Minimum' and 'Maximum' displayed values as indicated above. Don't check anything else in that dialog. Do the same for the other channels.
-6. Now we want to save each channel as it's own pseudocolored image. Select from the menu 'Image -> Type -> 
+1. Open up Fiji and ensure that it's up to date!
+2. Open each channel image ('File -> Open' or `Ctrl-O`.
+  + Images saved by the LaVision (if exported to a Tif file that is) will have the following extension: `yourfile.ome.tif`
+  + If you have images recorded simulatenously across multiple detectors (i.e. a multi-spectral image), each detector will have it's own tif file. The naming structure looks like this: `yourfile_C1.ome.tif`, `yourfile_C2.ome.tif` and so on, where `C#` refers to the number (#) of channels. 
+  + You need to open all the channel images!
+3. After you've opened all the channel images,  we want to merge them into composite image (composite just means that it's handled as 1 file, but it has the multiple channels in the 1 file). To do this: 
+  1. Select from the menu: 'Images -> Color -> Merge channels':
+
+<img src="http://s25.postimg.org/j5e0rep5b/Merge_Channels.png"/>
+  2. Assign the file names to the colors you desire. In this case, I set `C0` to blue, `C1` to green, and `C3` to red.
+  3. Ensure the 'Create Composite' is checked
+  4. Press 'Ok'
+3. Go to 'Images -> Color' and open: Color Channels
+4. Go to 'Images -> Adjust' and open: Brightness & Contrast
+5. In the 'Channels' dialog box, select 'Color' from the pull down menu
+6. Select 'Channel 1', press 'Set', and enter the 'Minimum' and 'Maximum' displayed values as indicated above. Don't check anything else in that dialog. Do the same for the other channels.
+7. Now we want to save each channel as it's own pseudocolored image. Select from the menu 'Image -> Type -> 
